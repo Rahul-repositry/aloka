@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital@1&family=Poiret+One&display=swap");
+
+/* font-family: 'Philosopher'; */
+/* font-family: 'Poiret One'; */
+/* font-family: "Rajdhani"; */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+}
+
+.wrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10rem;
+}
+
+.section1 {
+}
+.section1 .heading {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Philosopher";
+  background: rgb(41, 40, 40);
+  color: white;
+  letter-spacing: 1em;
+  padding: 0.5em;
+}
+.section1 .headerPhoto {
+  position: relative;
+  width: 100vw;
+}
+.section1 .headerPhoto::after {
+  content: "Go Professional";
+  font-family: "Poiret One";
+  color: white;
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  position: absolute;
+  z-index: 9;
+  top: 60%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+.section1 .headerPhoto::before {
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: #77777773;
+  height: 100%;
+  width: 100%;
+  font-size: 4rem;
+  letter-spacing: 0.1em;
+  position: absolute;
+  z-index: 8;
+}
+.section1 .headerPhoto img {
+  width: 100%;
+}
+
+.section2 {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  justify-content: space-between;
+}
+
+.section2 img {
+  width: 100%;
+  max-width: 400px;
+}
+.section2 .img {
+  position: relative;
+}
+.section2 .img::after {
+  content: "";
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  right: -40px;
+  background: white;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+}
+.section2 .img.girl::after {
+  left: -40px;
+}
+.section2 .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
+}
+.section2 .minimal {
+  font-size: 12px;
+  letter-spacing: 1em;
+}
+.section2 .heading {
+  font-size: 4rem;
+  text-align: center;
+}
+.section2 .para {
+  font-size: 1rem;
+  font-family: "Philosopher";
+  letter-spacing: 1px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+}
+.section3 .mainHeading {
+  position: relative;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Philosopher";
+  letter-spacing: 1em;
+  padding: 0.5em;
+  margin-bottom: 2rem;
+}
+.section3 .mainHeading::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, black, transparent);
+}
+.section3 .part1 {
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+}
+
+.section3 .part1 .img {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.section3 .part1 img {
+  width: 580px;
+  height: 470px;
+  object-fit: cover;
+}
+
+.section3 .part1 .desc {
+  flex-grow: 1;
+}
+
+.section3 .part1.bhalu .desc {
+  order: -1;
+}
+
+.section3 .part1 .minimal {
+  font-size: 12px;
+  letter-spacing: 0.4em;
+  text-align: center;
+  padding: 1em;
+}
+.section3 .part1 .heading {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.section4 img {
+  width: 100%;
+}
